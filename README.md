@@ -12,3 +12,14 @@ Build
 
     ./gradlew
 
+Download
+--------
+TBD
+
+Usage
+-----
+TBD
+
+License
+-------
+Apache 2.0
