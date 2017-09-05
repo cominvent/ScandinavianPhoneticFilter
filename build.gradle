@@ -1,0 +1,22 @@
+group 'com.findwise'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+defaultTasks 'build'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+          url "http://repo.spring.io/libs-release-remote/"
+    }
+}  
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.solr', name: 'solr-core', version: '6.6.0'
+    compile group: 'org.apache.lucene', name: 'lucene-analyzers-common', version: '6.6.0'
+    compile group: 'org.restlet.jee', name: 'org.restlet', version: '2.3.0'
+}
